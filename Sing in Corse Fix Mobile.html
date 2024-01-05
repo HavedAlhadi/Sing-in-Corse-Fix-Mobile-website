@@ -1,0 +1,171 @@
+<!Doctype html>
+<html>
+    <head id="head">
+    <meta charset="UTF-8">
+    <title>My web for Sing in Corse Fix Mobile</title>
+    <meta name="descirption" contant="Sing in Corse Fix Mobile">
+    <link rel="stylesheet" href="Sing in Corse Fix Mobile.css">
+    </head>
+    <body>        
+        <form  id="from">
+        <section class="Form" id="Form" > 
+            <header id="header">
+                <h1>  استمارة تسجيل في دورة صيانة مبايل </h1>
+                <div>
+                    <div id="swith">
+                    </div>
+                    <div id="scrol">
+                    </div>                
+                </div>
+            </header>
+            <div class="inputinfo" id="inputinfo">
+                <div class="input" id="input">
+                <div class="onerow">    
+                    <div class="divname">
+                        <label>اسم الطالب</label>
+                        <input type="text" class="name_std" id="name_std" >
+                    </div>
+                    <div class="divnum">
+                    <label>العمر</label>
+                            <input type="number" class="number_std" id="age_std">
+                        </div>
+                </div>
+                    <div class="onerow">    
+                        <div class="divGen">
+                            <label>جنس الطالب</label>
+                            <div class="Genders">                    
+                            <input type="radio" required id="male" name="gender1" value="ذكر" checked>
+                            <label for="male">ذكر</label>                     
+                            <input type="radio" required id="female" name="gender1" value="أنثى">
+                            <label for="female">أنثى</label>
+                            </div>
+                        </div>
+                        <div class="divFimage">
+                            <div class="Fimage">
+                        <label>الصورة الشخصية</label>
+                                <input type="file" class="image_std" id="image_std" >
+                            </div>
+                        </div>
+                    </div>
+                        <div class="onerow">        
+                            <div class="divEmail">
+                                <label>البريد الإلكتروني</label>
+                                <input type="email" class="email_std" id="email_std">
+                            </div>
+                            <div class="divnumphon">
+                            <label>رقم التلفون</label>
+                                    <input type="number" class="numphon_std" id="phone_std">
+                            </div>
+                        </div>
+                            <div class="onerow">        
+                                <div class="divExcp">
+                                    <label>المؤهل العلمي</label>
+                                    <input type="text" id="edu_std" list="list_edu" required>
+                                    <datalist id="list_edu">
+                                        <option value="ثانوية"></option>
+                                        <option value="بكلوريا"></option>
+                                        <option value="ماحستير"></option>
+                                        <option value="دكتورة"></option>
+                                    </datalist> 
+                                </div>                        
+                                <div class="divyrtah">
+                                <label>سنة التخرج</label>
+                                <select id="year_std" class="sele">                                                    
+                                </select>  
+                                </div>
+                            </div>
+                                <div class="onerow">    
+                                    <div class="divtime">
+                                        <div class="fat">
+                                        <label>الفترة</label>
+                                        </div>
+                                        
+                                        <div class="Genders">                    
+                                        <input type="radio" required id="mor" name="std_am" value="صباحا" checked>
+                                        <label for="male">صباحا</label>                     
+                                        <input type="radio" required id="eve" name="std_am" value="مساء">
+                                        <label for="female">مساء</label>                                
+                                        </div>
+                                    </div>                            
+                                        <div class="divDtime">
+                                            <label>الوقت</label>
+                                            <select id="std_time" class="seleD">
+                                                <option value="8-10">8-10</option>
+                                                <option value="10-12">10-12</option>
+                                            </select>   
+                                        </div>                        
+                                </div>
+                                <div class="row" id="rowaa">
+                                    <div class="partbtn" id="partbtn">
+                                        <input type="submit" id="register" value="تسجيل">
+                                        <input type="reset" id="cansel" value="إلغاء" >
+                                        <button id="edit">تعديل</button>
+                                        <button id="show">عرض</button>
+                                        <button id="print">طباعة</button>
+                                        <button id="eexit">خروج</button>
+                                    </div>
+                                    <div id="deletAll">
+                                    <!--<button id="claer">حذف الكل</button>-->
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                                <div class="row" >
+                                    <table class="tb_reg" id="tb_reg" cellspacing="0">
+                                    <thead class="th-head" id="th-head">
+                                        <tr>
+                                            <th>الرقم</th>
+                                            <th>الاسم</th>
+                                            <th>العمر</th>
+                                            <th>الجنس</th>
+                                            <th>البريد الإلكتروني</th>
+                                            <th>التلفون</th>
+                                            <th>المؤهل العلمي</th>
+                                            <th>سنة التخرج</th>
+                                            <th>الوقت</th>
+                                            <th>حذف</th>
+                                            <th>تعديل</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>    
+                                    <tbody class="tb-body" id="tbody">
+
+                                    </tbody>
+                                    </table>
+                                </div>                            
+             </div>        
+        </section>
+</form>
+
+        <div class="from_login" id="from_login">
+            <div class="from_title" id="tele">
+            تسجيل الدخول
+            </div>
+            <div class="input_login" id="input_login">
+                <div class="broder_login" id="broder_login">
+                    <input type="text" name="username" placeholder="اسم المستخدم" class="broder_item" id="broder_item" >
+                </div>
+                <div class="broder_login" id="broder_login1">
+                <input type="password" name="password" placeholder="كلمة المرور" class="broder_item" id="broder_iteme">
+            </div>
+            </div>
+            <div class="active" id="active">
+                
+                <div class="btn" id="btnLogin">دخول</div>   
+            </div>
+            <div class="icon_login" id="tellme">  
+                <span id="messag"></span>
+                    <div class="midaicon" id="midaicon">
+                        <a href="#" class="twitter" id="twitter"></a>
+                        <a href="#" class="face" id="face"></a>
+                        <a href="#" class="inst" id="inst"></a>
+                        <a href="#" class="whats" id="whats"></a>
+                        <a href="#" class="snap" id="snap"></a>
+                    </div>             
+                    <p id="mico">طور بواسطة م. عبد الله الهادي</p>
+            </div>
+        </div>
+        <script src="jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="Sing in Corse Fix Mobile.js"></script>
+    </body>
+</html>
